@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Testimonials</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div>
+    <h1>Testimonial Cards</h1>
+    <p class="sub">Made testimonial cards for a website using HTML and CSS.</p>
+  </div>
+
+  <div class="row-two">
+    <div class="card dark">
+      <p class="quote">I've been working through every exercise on the platform and I'm genuinely surprised how far I've come from where I started.<br><br>Highly recommended!</p>
+      <div class="person">
+        <div class="avatar">
+  <img src="./pho.webp" alt="Artem Jones">
+</div>
+        <div>
+          <div class="name">Artem Jones</div>
+          <div class="role">Junior Frontend Developer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card light">
+      <p class="quote">Since starting my career, this has been the one resource I've stuck with the whole way through it helped me go from zero to landing a job and changing my family's financial trajectory.</p>
+      <div class="person">
+        <div class="avatar">
+  <img src="./pho.webp" alt="Artem Jones">
+</div>
+        <div>
+          <div class="name">Artem Jones</div>
+          <div class="role">Junior Frontend Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="avatar big">
+  <img src="./pho.webp" alt="Jackie Mackle">
+</div>
+    <div class="panel">
+      <div class="stars">★★★★★</div>
+      <div class="name">Jackie Mackle</div>
+      <div class="role">Engineering Manager</div>
+      <p class="quote">I find myself recommending this to all the interns and junior developers on my team. It's a great way to skill up and grow in your career.</p>
+    </div>
+  </div>
+
+  <div class="carousel">
+    <p class="quote">This has been an incredible resource. I was fortunate to discover it early on, when it was just a small side project. It's amazing to see how much it's grown and how many people it's helped since then.</p>
+    <div class="nav">
+      <button class="arrow" onclick="shift(-1)">&#8249;</button>
+      <div class="avatars" id="avatars">
+        <div class="avatar" data-name="Riya Sharma">
+  <img src="./pho.webp" alt="Riya Sharma">
+</div>
+        <div class="avatar active" data-name="Artem Jones">
+  <img src="./pho.webp" alt="Artem Jones">
+</div>
+        <div class="avatar" data-name="Tom Becker">
+  <img src="./pho.webp" alt="Tom Becker">
+</div>
+      </div>
+      <button class="arrow" onclick="shift(1)">&#8250;</button>
+    </div>
+    <div class="name" id="carouselName">Artem Jones</div>
+  </div>
+</div>
+
+<script>
+  const avatars = document.querySelectorAll('#avatars .avatar');
+  const nameEl = document.getElementById('carouselName');
+  let active = 1;
+  function render(){
+    avatars.forEach((a,i)=>a.classList.toggle('active', i===active));
+    nameEl.textContent = avatars[active].dataset.name;
+  }
+  function shift(dir){
+    active = (active + dir + avatars.length) % avatars.length;
+    render();
+  }
+</script>
+
+</body>
+</html>
