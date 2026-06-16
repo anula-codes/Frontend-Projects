@@ -10,7 +10,7 @@ Project 4: https://roadmap.sh/projects/changelog-component
 
 Project 5: https://roadmap.sh/projects/testimonial-cards
 
-Project 6:
+Project 6: https://roadmap.sh/projects/datepicker-ui
 
 Project 7:
 
