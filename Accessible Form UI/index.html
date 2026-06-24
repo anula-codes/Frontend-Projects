@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Completion Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="form-section">
+
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="What should we call you?" aria-required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+
+            <input type="email" id="email" value="john@doe.com" aria-invalid="true" aria-describedby="email-error">
+
+            <p id="email-error" class="error-msg">
+                Email is already taken
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Enter Password</label>
+
+            <div class="password-wrapper">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="xxxxxxxx"
+                    aria-required="true">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+
+            <div class="password-wrapper">
+                <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="xxxxxxxx"
+                    aria-required="true">
+            </div>
+        </div>
+
+        <button class="submit-btn">
+            Update Profile
+        </button>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="info-section">
+
+        <div class="progress-wrapper">
+
+            <div class="progress-circle">
+                <span>65%</span>
+            </div>
+
+            <h3>Profile Completeness</h3>
+
+        </div>
+
+        <div class="checklist">
+
+            <p class="completed">
+                Create Account
+            </p>
+
+            <p class="completed">
+                Update Roadmap Progress
+            </p>
+
+            <p class="completed">
+                Setup Public Profile
+            </p>
+
+            <p>
+                Complete your first project
+            </p>
+
+            <p>
+                Invite your Friends
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
+    padding:20px;
+}
+
+.container{
+    width:900px;
+    max-width:100%;
+    background:#fff;
+    border:2px solid #222;
+    border-radius:30px;
+    padding:40px;
+    display:flex;
+    gap:50px;
+}
+
+.form-section{
+    flex:1;
+}
+
+.form-group{
+    margin-bottom:24px;
+}
+
+label{
+    display:block;
+    font-size:1.3rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    height:50px;
+    border:2px solid #333;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:1rem;
+}
+
+input::placeholder{
+    color:#b9b9b9;
+}
+
+input:focus{
+    outline:none;
+    border-color:#000;
+    box-shadow:0 0 0 3px rgba(0,0,0,0.15);
+}
+
+input[aria-invalid="true"]{
+    border-color:#ef4444;
+    color:#ef4444;
+}
+
+.error-msg{
+    color:#ef4444;
+    margin-top:8px;
+    font-size:0.95rem;
+}
+
+.password-wrapper{
+    position:relative;
+}
+
+.password-wrapper input{
+    padding-right:55px;
+}
+
+.eye-btn{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:1.2rem;
+}
+
+.eye-btn:focus{
+    outline:2px solid #000;
+    border-radius:6px;
+}
+
+.submit-btn{
+    width:100%;
+    height:58px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:14px;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    opacity:.9;
+}
+
+.info-section{
+    width:280px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.progress-wrapper{
+    text-align:center;
+}
+
+.progress-circle{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+
+    background:
+    conic-gradient(
+        #000 0deg 234deg,
+        #bfc5cc 234deg 360deg
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    position:relative;
+}
+
+.progress-circle::before{
+    content:"";
+    position:absolute;
+    width:95px;
+    height:95px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.progress-circle span{
+    position:relative;
+    z-index:1;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.progress-wrapper h3{
+    margin-top:20px;
+    font-size:1.5rem;
+}
+
+.checklist{
+    margin-top:30px;
+    width:100%;
+    background:#efefef;
+    border-radius:24px;
+    padding:25px;
+}
+
+.checklist p{
+    font-size:1.1rem;
+    margin-bottom:15px;
+    line-height:1.4;
+}
+
+.completed{
+    color:#8d8d8d;
+    text-decoration:line-through;
+}
+
+@media (max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .info-section{
+        width:100%;
+    }
+}
