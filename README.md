@@ -12,7 +12,7 @@ Project 5: https://roadmap.sh/projects/testimonial-cards
 
 Project 6: https://roadmap.sh/projects/datepicker-ui
 
-Project 7:
+Project 7: https://roadmap.sh/projects/accessible-form-ui
 
 Project 8:
 
