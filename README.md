@@ -14,7 +14,7 @@ Project 6: https://roadmap.sh/projects/datepicker-ui
 
 Project 7: https://roadmap.sh/projects/accessible-form-ui
 
-Project 8:
+Project 8: https://roadmap.sh/projects/image-grid
 
 Project 9:
 
